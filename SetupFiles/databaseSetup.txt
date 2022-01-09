@@ -1,0 +1,70 @@
+DROP TABLE post;
+DROP TABLE user;
+DROP TABLE heart;
+DROP TABLE favorite;
+
+CREATE TABLE user(userid INT NOT NULL AUTO_INCREMENT,
+                  name VARCHAR(50) NOT NULL,
+                  email VARCHAR(50) NOT NULL,
+                  password VARCHAR(25) NOT NULL,
+                  CONSTRAINT USER_PK PRIMARY KEY (USERID));
+
+CREATE TABLE post(postid INT NOT NULL AUTO_INCREMENT,             
+                   name varchar(20),
+                   content VARCHAR(1000) NOT NULL,
+                   userid VARCHAR(255),
+                   `date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+                   CONSTRAINT Post_PK PRIMARY KEY (postid) );
+
+CREATE TABLE heart(likeid INT NOT NULL AUTO_INCREMENT,
+                  postid VARCHAR(20),
+                  userid VARCHAR(20),
+                  CONSTRAINT LIKE_PK PRIMARY KEY (likeid));
+	
+CREATE TABLE favorite(favoriteid INT NOT NULL AUTO_INCREMENT,
+                  postid VARCHAR(20),
+                  userid VARCHAR(20),
+                  tag VARCHAR(50),
+                  CONSTRAINT FAVORITE_PK PRIMARY KEY (favoriteid));
+
+
+ALTER TABLE user AUTO_INCREMENT=10000;
+ALTER TABLE post AUTO_INCREMENT=10000;
+ALTER TABLE heart AUTO_INCREMENT=10000;
+ALTER TABLE favorite AUTO_INCREMENT=10000;
+
+
+INSERT INTO user (name, email, password) VALUES ('Rohin Paikattil', 'paikattil.rohin@gmail.com', 'paikattil');
+INSERT INTO user (name, email, password) VALUES ('John Snow', 'john.snow@gmail.com', 'stark');
+INSERT INTO user (name, email, password) VALUES ('Arya Stark', 'arya.stark@gmail.com', 'stark');
+INSERT INTO user (name, email, password) VALUES ('Tyrion Lannister', 'tyrion.lannister@gmail.com', 'lannister');
+INSERT INTO user (name, email, password) VALUES ('Renly Baratheon', 'renly.baratheon@gmail.com', 'baratheon');
+INSERT INTO user (name, email, password) VALUES ('Theon Greyjoy', 'theon.greyjoy@gmail.com', 'greyjoy');
+
+
+INSERT INTO post(name, content, userid) VALUES ('Rohin Paikattil' , 'The Mind Reading Card Trick','10000');
+INSERT INTO post(name, content, userid) VALUES ('Rohin Paikattil' , 'The Impossible Three Card Trick','10000');
+INSERT INTO post(name, content, userid) VALUES ('Arya Stark' , 'Packet Trick with Selection','10002');
+INSERT INTO post(name, content, userid) VALUES ('Arya Stark' , 'Packet Trick with Selection','10002');
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

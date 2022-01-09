@@ -1,0 +1,15 @@
+https://github.com/shohan-ch/social-network-template
+
+https://smarttechnicalworld.com/install-mysql-on-apple-mac-m1/
+
+https://realpython.com/primer-on-jinja-templating/
+
+https://stackoverflow.com/questions/30011170/flask-application-how-to-link-a-javascript-file-to-website
+
+https://frontbackend.com/css/css-like-and-favorite-buttons
+
+https://stackoverflow.com/questions/12059424/about-mysqldb-conn-autocommittrue
+
+https://stackoverflow.com/questions/37908024/form-sends-get-instead-of-post
+
+https://stackoverflow.com/questions/8987455/sql-server-multiple-word-search-and-ranking-the-results
